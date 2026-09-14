@@ -1,30 +1,9 @@
-<?php
-// Konfigurasi Data Portofolio & Proyek
-$profil = [
-    "nama" => "Abid Adiyatma",
-    "inisial" => "AA",
-    "gelar" => "Business Intelligence Analyst",
-    "spesialisasi" => "Certified Business Intelligence Analyst & Data Specialist yang berfokus pada web scraping, otomatisasi proses, dan kualitas data industri.",
-    "lokasi" => "Kota Tangerang, Indonesia",
-    "whatsapp" => "6281285252088",
-    "email" => "abidadiyatma53@gmail.com",
-    "instagram" => "adiyatma.abid"
-];
-
-$statistik = [
-    ["angka" => "3+", "label" => "Experience", "warna" => "text-white"],
-    ["angka" => "4", "label" => "Services", "warna" => "text-blue-400"],
-    ["angka" => "4+", "label" => "Projects", "warna" => "text-purple-400"],
-    ["angka" => "10", "label" => "Certs", "warna" => "text-green-400"],
-    ["angka" => "92", "label" => "Score", "warna" => "text-pink-400"]
-];
-?>
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $profil['nama']; ?> - <?php echo $profil['gelar']; ?></title>
+    <title>Abid Adiyatma - Business Intelligence Analyst</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -58,8 +37,8 @@ $statistik = [
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-borderDark">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
            <a href="#home" class="flex items-center hover:opacity-80 transition">
-    <img src="logo.jpg" alt="Logo Abid Adiyatma" class="w-9 h-9 rounded-full object-cover border border-borderDark bg-cardBg">
-</a>
+                <img src="logo.jpg" alt="Logo Abid Adiyatma" class="w-9 h-9 rounded-full object-cover border border-borderDark bg-cardBg">
+            </a>
             <div class="hidden lg:flex items-center space-x-6 text-xs font-medium text-gray-400">
                 <a href="#home" class="hover:text-white transition">Beranda</a>
                 <a href="#skills" class="hover:text-white transition">Keahlian</a>
@@ -71,63 +50,71 @@ $statistik = [
             </div>
             <div class="flex items-center gap-3">
                 <a href="cv.pdf" download class="px-3.5 py-1.5 rounded-lg bg-cardBg border border-borderDark text-xs font-semibold text-gray-200 hover:bg-gray-800 hover:border-blue-500 transition flex items-center gap-1.5">
-    <i class="fa-solid fa-file-arrow-down text-blue-400"></i> Unduh Resume
-</a>
+                    <i class="fa-solid fa-file-arrow-down text-blue-400"></i> Unduh Resume
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION (UKURAN DIPERBESAR) -->
+    <!-- HERO SECTION -->
     <section id="home" class="bg-[#0b0f19] text-white pt-28 pb-20 px-6 max-w-7xl mx-auto font-sans">
-        <!-- Banner Gambar Header (Lebih Besar & Luas) -->
         <!-- Banner Gambar Header -->
         <div class="relative w-full h-[320px] md:h-[400px] rounded-3xl overflow-hidden mb-20 border border-borderDark bg-cardBg flex flex-col items-center justify-center text-center p-8 md:p-16 shadow-2xl">
             
-            <!-- GAMBAR BACKGROUND (Ganti 'bg-banner.jpg' dengan nama file gambar Anda) -->
             <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('bg-banner.jpg');"></div>
-            
-            <!-- OVERLAY TRANSPARANSI (Diubah dari /80 dan /90 menjadi /40 dan /60 agar background lebih terang) -->
             <div class="absolute inset-0 bg-gradient-to-b from-cardBg/40 via-[#0b0f19]/60 to-[#0b0f19] z-10"></div>
-            
-            <!-- Efek Cahaya Tambahan (Opsional, bisa dihapus jika ingin polos) -->
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
             
-            <!-- Konten Teks Banner -->
             <h1 class="relative z-20 text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-3">
                 Analyze<span class="text-blue-500">.</span>Optimize<span class="text-purple-500">.</span>Deliver<span class="text-pink-500">.</span>
             </h1>
             <p class="relative z-20 text-xs sm:text-sm text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                <?php echo $profil['spesialisasi']; ?>
+                Certified Business Intelligence Analyst & Data Specialist yang berfokus pada web scraping, otomatisasi proses, dan kualitas data industri.
             </p>
         </div>
 
-        <!-- Bagian Profil & Statistik (Diperbesar) -->
+        <!-- Bagian Profil & Statistik -->
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10 -mt-36 md:-mt-44 relative z-30">
             <div class="flex flex-col md:flex-row items-start md:items-end gap-8">
                 <div class="w-56 h-56 md:w-64 md:h-64 rounded-3xl p-1 bg-gradient-to-b from-neutral-700 to-neutral-900 shadow-2xl border border-borderDark overflow-hidden bg-cardBg flex-shrink-0">
-                    <img src="abid.jpeg" alt="<?php echo $profil['nama']; ?>" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'">
+                    <img src="abid.jpeg" alt="Abid Adiyatma" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'">
                 </div>
                 <div class="mb-3">
                     <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-2">
-                        <?php echo $profil['nama']; ?>
+                        Abid Adiyatma
                     </h2>
                     <p class="text-blue-400 font-semibold text-base md:text-lg mb-3">
-                        <?php echo $profil['gelar']; ?>
+                        Business Intelligence Analyst
                     </p>
                     <a href="https://maps.google.com/?q=Kota+Tangerang" target="_blank" class="text-gray-300 text-sm md:text-base flex items-center gap-2 hover:text-blue-400 transition">
                         <i class="fa-solid fa-location-dot text-gray-400"></i>
-                        <?php echo $profil['lokasi']; ?>
+                        Kota Tangerang, Indonesia
                     </a>
                 </div>
             </div>
 
+            <!-- Statistik Statis -->
             <div class="grid grid-cols-5 gap-4 md:gap-8 border border-borderDark bg-cardBg/95 backdrop-blur-md px-8 py-6 rounded-3xl shadow-2xl">
-                <?php foreach ($statistik as $stat): ?>
                 <div class="text-center">
-                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold"><?php echo $stat['label']; ?></p>
-                    <p class="text-2xl md:text-3xl font-extrabold <?php echo $stat['warna']; ?>"><?php echo $stat['angka']; ?></p>
+                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold">Experience</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-white">3+</p>
                 </div>
-                <?php endforeach; ?>
+                <div class="text-center">
+                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold">Services</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-blue-400">4</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold">Projects</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-purple-400">4+</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold">Certs</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-green-400">10</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400 text-xs md:text-sm mb-1 uppercase tracking-wider font-semibold">Score</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-pink-400">92</p>
+                </div>
             </div>
         </div>
 
@@ -138,9 +125,8 @@ $statistik = [
         </div>
     </section>
 
-    <!-- SKILLS & SERVICES (Aesthetic & Interactive Mockups) -->
+    <!-- SKILLS & SERVICES -->
     <section id="skills" class="py-24 px-6 max-w-7xl mx-auto relative">
-        <!-- Efek Background Glow Cahaya Halus -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-600/10 blur-[140px] pointer-events-none rounded-full"></div>
 
         <div class="text-center mb-16 relative z-10">
@@ -149,7 +135,6 @@ $statistik = [
             <p class="text-sm sm:text-base text-gray-400 mt-3 max-w-2xl mx-auto leading-relaxed">Menghadirkan layanan digital dengan standar kualitas tinggi, menggabungkan ketajaman analisis teknis dan estetika antarmuka modern.</p>
         </div>
 
-        <!-- CSS Keyframes & Interactivity Styles -->
         <style>
             @keyframes floatGraphic {
                 0%, 100% { transform: translateY(0px) rotate(0deg); }
@@ -163,42 +148,28 @@ $statistik = [
                 0%, 100% { opacity: 0.5; transform: scale(1); }
                 50% { opacity: 1; transform: scale(1.02); }
             }
-            .svg-float {
-                animation: floatGraphic 5s ease-in-out infinite;
-            }
-            .cursor-anim {
-                animation: moveCursorSmooth 3.5s ease-in-out infinite;
-            }
-            .pulse-anim {
-                animation: pulseGlow 2.5s ease-in-out infinite;
-            }
+            .svg-float { animation: floatGraphic 5s ease-in-out infinite; }
+            .cursor-anim { animation: moveCursorSmooth 3.5s ease-in-out infinite; }
+            .pulse-anim { animation: pulseGlow 2.5s ease-in-out infinite; }
         </style>
 
-        <!-- Grid 3 Kolom Utama dengan Card Aesthetic Glassmorphism -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-            
-            <!-- Card 1: Business Intelligence -->
-            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-blue-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] group">
+            <!-- Card 1 -->
+            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-blue-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 group">
                 <div>
-                    <!-- Ilustrasi Mockup Vektor Aesthetic ala Referensi -->
                     <div class="w-full h-48 rounded-2xl overflow-hidden mb-6 border border-white/10 bg-[#090b10] flex items-center justify-center p-3 relative group-hover:border-blue-500/40 transition-all duration-500 shadow-2xl">
                         <svg class="w-full h-full svg-float drop-shadow-lg" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Window Container Frame -->
                             <rect width="280" height="160" rx="12" fill="#0e1117" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-                            <!-- Window Header Dots -->
                             <circle cx="20" cy="16" r="4" fill="#ef4444"/>
                             <circle cx="32" cy="16" r="4" fill="#f59e0b"/>
                             <circle cx="44" cy="16" r="4" fill="#10b981"/>
-                            <!-- Inner Content Blocks (Sesuai Referensi Gambar) -->
                             <rect x="20" y="32" width="110" height="55" rx="8" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <rect x="145" y="32" width="115" height="30" rx="6" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <rect x="145" y="70" width="80" height="17" rx="4" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <rect x="145" y="95" width="115" height="42" rx="8" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
-                            <!-- Animated Bar Charts -->
                             <rect x="32" y="105" width="22" height="32" rx="4" fill="#3b82f6" fill-opacity="0.8"/>
                             <rect class="pulse-anim" x="62" y="85" width="22" height="52" rx="4" fill="#3b82f6"/>
                             <rect x="92" y="115" width="22" height="22" rx="4" fill="#93c5fd" fill-opacity="0.8"/>
-                            <!-- Interactive Mouse Cursor -->
                             <g class="cursor-anim" transform="translate(180, 85)">
                                 <path d="M0 0L14 14L8 15L5 20L2 18L5 13L0 10Z" fill="#ffffff" stroke="#3b82f6" stroke-width="1.5"/>
                             </g>
@@ -215,8 +186,8 @@ $statistik = [
                 </div>
             </div>
 
-            <!-- Card 2: Web Scraping & Automation -->
-            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-purple-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(168,85,247,0.15)] group">
+            <!-- Card 2 -->
+            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-purple-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 group">
                 <div>
                     <div class="w-full h-48 rounded-2xl overflow-hidden mb-6 border border-white/10 bg-[#090b10] flex items-center justify-center p-3 relative group-hover:border-purple-500/40 transition-all duration-500 shadow-2xl">
                         <svg class="w-full h-full svg-float drop-shadow-lg" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +195,6 @@ $statistik = [
                             <circle cx="20" cy="16" r="4" fill="#ef4444"/>
                             <circle cx="32" cy="16" r="4" fill="#f59e0b"/>
                             <circle cx="44" cy="16" r="4" fill="#10b981"/>
-                            <!-- Code Editor UI Mockup -->
                             <rect x="20" y="32" width="100" height="10" rx="3" fill="#a855f7" fill-opacity="0.6"/>
                             <rect x="20" y="52" width="160" height="6" rx="2" fill="currentColor" fill-opacity="0.2"/>
                             <rect x="35" y="68" width="130" height="6" rx="2" fill="currentColor" fill-opacity="0.15"/>
@@ -244,8 +214,8 @@ $statistik = [
                 </div>
             </div>
 
-            <!-- Card 3: Web Development & IT Support -->
-            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-emerald-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(16,185,129,0.15)] group">
+            <!-- Card 3 -->
+            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-emerald-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 group">
                 <div>
                     <div class="w-full h-48 rounded-2xl overflow-hidden mb-6 border border-white/10 bg-[#090b10] flex items-center justify-center p-3 relative group-hover:border-emerald-500/40 transition-all duration-500 shadow-2xl">
                         <svg class="w-full h-full svg-float drop-shadow-lg" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +225,6 @@ $statistik = [
                             <circle cx="44" cy="16" r="4" fill="#10b981"/>
                             <rect x="20" y="32" width="240" height="30" rx="6" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <rect x="32" y="43" width="60" height="8" rx="3" fill="#10b981" fill-opacity="0.8"/>
-                            <!-- Interactive Card Grid Layout -->
                             <rect class="pulse-anim" x="20" y="75" width="74" height="65" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
                             <rect x="103" y="75" width="74" height="65" rx="8" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <rect x="186" y="75" width="74" height="65" rx="8" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
@@ -272,37 +241,22 @@ $statistik = [
                 </div>
             </div>
 
-            <!-- Card 4: Database & Quality Control -->
-            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-pink-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(236,72,153,0.15)] group">
+            <!-- Card 4 -->
+            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-pink-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 group">
                 <div>
                     <div class="w-full h-48 rounded-2xl overflow-hidden mb-6 border border-white/10 bg-[#090b10] flex items-center justify-center p-3 relative group-hover:border-pink-500/40 transition-all duration-500 shadow-2xl">
                         <svg class="w-full h-full svg-float drop-shadow-lg" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Window Container Frame -->
                             <rect width="280" height="160" rx="12" fill="#0e1117" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-                            <!-- Window Header Dots -->
                             <circle cx="20" cy="16" r="4" fill="#ef4444"/>
                             <circle cx="32" cy="16" r="4" fill="#f59e0b"/>
                             <circle cx="44" cy="16" r="4" fill="#10b981"/>
-                            
-                            <!-- Database Cylinder Layers (Diposisikan Pasti di Tengah) -->
-                            <!-- Database Cylinder Layers -->
-<g transform="translate(90, 45)">
-    <g class="pulse-anim">
-        <ellipse cx="50" cy="15" rx="45" ry="13" fill="#ec4899" fill-opacity="0.35"/>
-        
-        <path 
-            d="M5 15V52C5 59.5 24.5 65 50 65C75.5 65 95 59.5 95 52V15" 
-            fill="#161b22" 
-            stroke="rgba(255,255,255,0.08)"
-        />
-        
-        <path 
-            d="M5 52C5 59.5 24.5 65 50 65C75.5 65 95 59.5 95 52" 
-            stroke="#ec4899" 
-            stroke-width="2"
-        />
-    </g>
-</g>
+                            <g transform="translate(90, 45)">
+                                <g class="pulse-anim">
+                                    <ellipse cx="50" cy="15" rx="45" ry="13" fill="#ec4899" fill-opacity="0.35"/>
+                                    <path d="M5 15V52C5 59.5 24.5 65 50 65C75.5 65 95 59.5 95 52V15" fill="#161b22" stroke="rgba(255,255,255,0.08)"/>
+                                    <path d="M5 52C5 59.5 24.5 65 50 65C75.5 65 95 59.5 95 52" stroke="#ec4899" stroke-width="2"/>
+                                </g>
+                            </g>
                         </svg>
                     </div>
                     <span class="inline-block text-[11px] font-bold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 mb-4 border border-pink-500/20 tracking-wide">Specialist</span>
@@ -316,8 +270,8 @@ $statistik = [
                 </div>
             </div>
 
-            <!-- Card 5: Microsoft Office & Reporting (Wide Span) -->
-            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-amber-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(245,158,11,0.15)] group md:col-span-2 lg:col-span-2">
+            <!-- Card 5 (Wide Span) -->
+            <div class="bg-gradient-to-b from-[#181b25] to-[#11131a] border border-white/10 hover:border-amber-500/50 p-8 rounded-[28px] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-2 group md:col-span-2 lg:col-span-2">
                 <div>
                     <div class="w-full h-48 rounded-2xl overflow-hidden mb-6 border border-white/10 bg-[#090b10] flex items-center justify-center p-3 relative group-hover:border-amber-500/40 transition-all duration-500 shadow-2xl">
                         <svg class="w-full h-full svg-float drop-shadow-lg" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -325,13 +279,11 @@ $statistik = [
                             <circle cx="20" cy="16" r="4" fill="#ef4444"/>
                             <circle cx="32" cy="16" r="4" fill="#f59e0b"/>
                             <circle cx="44" cy="16" r="4" fill="#10b981"/>
-                            <!-- Spreadsheet Table Cells Grid -->
                             <rect x="20" y="32" width="240" height="105" rx="8" fill="#161b22" stroke="rgba(255,255,255,0.04)"/>
                             <line x1="20" y1="62" x2="260" y2="62" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
                             <line x1="20" y1="96" x2="260" y2="96" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
                             <line x1="110" y1="32" x2="110" y2="137" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
                             <line x1="185" y1="32" x2="185" y2="137" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-                            <!-- Active Highlight Cell -->
                             <rect class="pulse-anim" x="111" y="63" width="73" height="32" rx="4" fill="#f59e0b" fill-opacity="0.25" stroke="#f59e0b" stroke-width="1.5"/>
                             <rect x="32" y="43" width="60" height="8" rx="3" fill="#f59e0b" fill-opacity="0.8"/>
                         </svg>
@@ -346,117 +298,113 @@ $statistik = [
                     <span class="px-3 py-1.5 bg-[#141721] rounded-xl border border-white/5">Administration</span>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- SHOWCASE KARYA TERBAIK -->
-<section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-3">
-            <span>✨</span> Showcase karya terbaik saya
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Portofolio & Proyek Unggulan</h2>
-        <p class="text-xs sm:text-sm text-gray-400 mt-2 max-w-xl mx-auto">Implementasi nyata web development, otomatisasi data, dan kontrol kualitas industri.</p>
-    </div>
-
-    <!-- Kontainer Grid dengan gap-8 untuk spasi horizontal dan vertikal -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project 1: Website Resmi MI Nurul Falah Pinang -->
-        <div class="bg-cardBg border border-borderDark hover:border-blue-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
-            <div>
-                <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
-                    <img src="mi-nurulfalah.jpg" alt="Website MI Nurul Falah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80'">
-                    <div class="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
-                </div>
-                <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 uppercase tracking-widest">Web Profile</span>
-                <h3 class="text-lg font-bold text-white mt-4 mb-3">Website Resmi MI Nurul Falah Pinang</h3>
-                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Platform web profil sekolah untuk media informasi akademik, profil lembaga, dan kegiatan siswa di lingkungan madrasah.</p>
+    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-3">
+                <span>✨</span> Showcase karya terbaik saya
             </div>
-            <div>
-                <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
-                    <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">PHP / HTML</span>
-                    <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Web Profile</span>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
-                    <span class="text-gray-400">Live Preview</span>
-                    <a href="https://minurulfalahpinang.web.id/" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center gap-1 font-semibold">Kunjungi <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
-                </div>
-            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Portofolio & Proyek Unggulan</h2>
+            <p class="text-xs sm:text-sm text-gray-400 mt-2 max-w-xl mx-auto">Implementasi nyata web development, otomatisasi data, dan kontrol kualitas industri.</p>
         </div>
 
-        <!-- Project 2: Pinggir Coffee Web Profile -->
-        <div class="bg-cardBg border border-borderDark hover:border-amber-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
-            <div>
-                <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
-                    <img src="pinggir-coffee.jpg" alt="Pinggir Coffee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80'">
-                    <div class="absolute inset-0 bg-amber-900/20 mix-blend-overlay"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-cardBg border border-borderDark hover:border-blue-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
+                <div>
+                    <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
+                        <img src="mi-nurulfalah.jpg" alt="Website MI Nurul Falah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80'">
+                        <div class="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
+                    </div>
+                    <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 uppercase tracking-widest">Web Profile</span>
+                    <h3 class="text-lg font-bold text-white mt-4 mb-3">Website Resmi MI Nurul Falah Pinang</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Platform web profil sekolah untuk media informasi akademik, profil lembaga, dan kegiatan siswa di lingkungan madrasah.</p>
                 </div>
-                <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 uppercase tracking-widest">F&B Profile</span>
-                <h3 class="text-lg font-bold text-white mt-4 mb-3">Pinggir Coffee Web Profile</h3>
-                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Website interaktif untuk coffee shop yang menyajikan informasi menu, suasana, dan lokasi kafe secara elegan.</p>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">PHP / HTML</span>
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Web Profile</span>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
+                        <span class="text-gray-400">Live Preview</span>
+                        <a href="https://minurulfalahpinang.web.id/" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center gap-1 font-semibold">Kunjungi <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
-                    <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">HTML / CSS</span>
-                    <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Responsive</span>
+
+            <!-- Project 2 -->
+            <div class="bg-cardBg border border-borderDark hover:border-amber-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
+                <div>
+                    <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
+                        <img src="pinggir-coffee.jpg" alt="Pinggir Coffee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80'">
+                        <div class="absolute inset-0 bg-amber-900/20 mix-blend-overlay"></div>
+                    </div>
+                    <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 uppercase tracking-widest">F&B Profile</span>
+                    <h3 class="text-lg font-bold text-white mt-4 mb-3">Pinggir Coffee Web Profile</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Website interaktif untuk coffee shop yang menyajikan informasi menu, suasana, dan lokasi kafe secara elegan.</p>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
-                    <span class="text-gray-400">Live Preview</span>
-                    <a href="http://pinggircoffee.site.je/" target="_blank" class="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-semibold">Kunjungi <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">HTML / CSS</span>
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Responsive</span>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
+                        <span class="text-gray-400">Live Preview</span>
+                        <a href="http://pinggircoffee.site.je/" target="_blank" class="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-semibold">Kunjungi <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-cardBg border border-borderDark hover:border-purple-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
+                <div>
+                    <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
+                        <img src="webscraping.jpeg" alt="INAPROC Scraper" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-purple-900/20 mix-blend-overlay"></div>
+                    </div>
+                    <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 uppercase tracking-widest">Automation</span>
+                    <h3 class="text-lg font-bold text-white mt-4 mb-3">INAPROC Product Data Scraper</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Pengembangan script Python otomatis untuk mengekstrak informasi produk secara massal dari platform INAPROC.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Python</span>
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Web Scraping</span>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
+                        <span class="text-gray-400 text-[11px]">PT. Sarling Aneka Energi</span>
+                        <span class="text-purple-400 font-bold">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-cardBg border border-borderDark hover:border-pink-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
+                <div>
+                    <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
+                        <img src="dataanalis.jpg" alt="Data Quality Control" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-pink-900/20 mix-blend-overlay"></div>
+                    </div>
+                    <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 uppercase tracking-widest">Data Specialist</span>
+                    <h3 class="text-lg font-bold text-white mt-4 mb-3">Data Quality Control & Spreadsheet</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Validasi data mentah CSV menggunakan Pandas dan Spreadsheet perusahaan untuk menjamin keakuratan data industri secara optimal.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Pandas</span>
+                        <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">CSV Processing</span>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
+                        <span class="text-gray-400 text-[11px]">PT. Sarling Aneka Energi</span>
+                        <span class="text-pink-400 font-bold">2025</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Project 3: INAPROC Product Data Scraper -->
-<div class="bg-cardBg border border-borderDark hover:border-purple-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
-    <div>
-        <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
-            <!-- Ganti src dengan nama file gambar web scraping -->
-            <img src="webscraping.jpeg" alt="INAPROC Scraper" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-purple-900/20 mix-blend-overlay"></div>
-        </div>
-        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 uppercase tracking-widest">Automation</span>
-        <h3 class="text-lg font-bold text-white mt-4 mb-3">INAPROC Product Data Scraper</h3>
-        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Pengembangan script Python otomatis untuk mengekstrak informasi produk secara massal dari platform INAPROC.</p>
-    </div>
-    <div>
-        <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
-            <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Python</span>
-            <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Web Scraping</span>
-        </div>
-        <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
-            <span class="text-gray-400 text-[11px]">PT. Sarling Aneka Energi</span>
-            <span class="text-purple-400 font-bold">2025</span>
-        </div>
-    </div>
-</div>
-
-<!-- Project 4: Data Quality Control & Spreadsheet -->
-<div class="bg-cardBg border border-borderDark hover:border-pink-500/50 p-8 rounded-3xl flex flex-col justify-between shadow-2xl transition-all duration-300 group">
-    <div>
-        <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-borderDark relative bg-darkBg">
-            <!-- Ganti src dengan nama file gambar data analysis -->
-            <img src="dataanalis.jpg" alt="Data Quality Control" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-pink-900/20 mix-blend-overlay"></div>
-        </div>
-        <span class="text-[10px] font-bold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 uppercase tracking-widest">Data Specialist</span>
-        <h3 class="text-lg font-bold text-white mt-4 mb-3">Data Quality Control & Spreadsheet</h3>
-        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-8">Validasi data mentah CSV menggunakan Pandas dan Spreadsheet perusahaan untuk menjamin keakuratan data industri secara optimal.</p>
-    </div>
-    <div>
-        <div class="flex flex-wrap gap-1.5 mb-5 text-[11px] text-gray-300">
-            <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">Pandas</span>
-            <span class="px-2.5 py-1 bg-darkBg rounded-lg border border-borderDark">CSV Processing</span>
-        </div>
-        <div class="flex items-center justify-between pt-4 border-t border-borderDark text-xs font-medium">
-            <span class="text-gray-400 text-[11px]">PT. Sarling Aneka Energi</span>
-            <span class="text-pink-400 font-bold">2025</span>
-        </div>
-    </div>
-</div>
-</section>
+    </section>
 
     <!-- WORK EXPERIENCE -->
     <section id="experience" class="py-20 px-6 max-w-7xl mx-auto">
@@ -466,7 +414,6 @@ $statistik = [
         </div>
 
         <div class="space-y-6 max-w-5xl mx-auto">
-            <!-- Exp 1 -->
             <div class="bg-cardBg border border-borderDark p-8 rounded-3xl shadow-xl relative">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 gap-3">
                     <div>
@@ -478,11 +425,10 @@ $statistik = [
                 <ul class="space-y-2.5 text-sm text-gray-300 list-disc list-inside leading-relaxed">
                     <li>Menyelesaikan program magang industri dengan predikat kelulusan <strong>Sangat Baik</strong> (Nilai Rata-rata Akhir: 92,00).</li>
                     <li>Melakukan validasi mutu dan verifikasi data hasil ekstraksi secara ketat guna memastikan kesesuaian spesifikasi produk industri.</li>
-                    <li>Menerapkan sistem kontrol kualitas data berbasis digital menggunakan spreadsheet perusahaan untuk meminimalisir kesalahan pelaporan (*zero-error*).</li>
+                    <li>Menerapkan sistem kontrol kualitas data berbasis digital menggunakan spreadsheet perusahaan untuk meminimalisir kesalahan pelaporan.</li>
                 </ul>
             </div>
 
-            <!-- Exp 2 -->
             <div class="bg-cardBg border border-borderDark p-8 rounded-3xl shadow-xl relative">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 gap-3">
                     <div>
@@ -492,13 +438,12 @@ $statistik = [
                     <span class="px-4 py-1.5 bg-purple-500/10 text-purple-400 rounded-full text-xs font-semibold">08 Apr 2025 – 08 Jul 2025</span>
                 </div>
                 <ul class="space-y-2.5 text-sm text-gray-300 list-disc list-inside leading-relaxed">
-                    <li>Merancang dan mengoperasikan script otomatisasi berbasis **Python** untuk melakukan ekstraksi data produk secara massal (*web scraping*) dari platform pengadaan nasional **INAPROC**.</li>
-                    <li>Mengelola pipeline pengolahan data mentah ke dalam format CSV serta melakukan pembersihan data (*data cleaning*) secara sistematis menggunakan pustaka **Pandas**.</li>
+                    <li>Merancang dan mengoperasikan script otomatisasi berbasis <strong>Python</strong> untuk melakukan ekstraksi data produk secara massal dari platform pengadaan nasional <strong>INAPROC</strong>.</li>
+                    <li>Mengelola pipeline pengolahan data mentah ke dalam format CSV serta melakukan pembersihan data secara sistematis menggunakan pustaka <strong>Pandas</strong>.</li>
                     <li>Mendukung kebutuhan operasional tim harian dalam penyiapan dokumen dan rekapitulasi data digital untuk mempercepat proses administrasi perusahaan.</li>
                 </ul>
             </div>
 
-            <!-- Exp 3 -->
             <div class="bg-cardBg border border-borderDark p-8 rounded-3xl shadow-xl relative">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 gap-3">
                     <div>
@@ -523,7 +468,6 @@ $statistik = [
         </div>
 
         <div class="space-y-4 max-w-5xl mx-auto">
-            <!-- Univ -->
             <div class="bg-cardBg border border-borderDark p-6 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between shadow-xl gap-4">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0">
@@ -538,7 +482,6 @@ $statistik = [
                 <span class="px-4 py-1.5 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold">Jul 2022 – Present</span>
             </div>
 
-            <!-- SMA -->
             <div class="bg-cardBg border border-borderDark p-6 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between shadow-xl gap-4">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-2xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-lg font-bold flex-shrink-0">
@@ -552,7 +495,6 @@ $statistik = [
                 <span class="text-xs text-gray-400 font-semibold px-3 py-1 bg-darkBg rounded-full border border-borderDark">Alumni</span>
             </div>
 
-            <!-- SMP -->
             <div class="bg-cardBg border border-borderDark p-6 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between shadow-xl gap-4">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-2xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-lg font-bold flex-shrink-0">
@@ -566,7 +508,6 @@ $statistik = [
                 <span class="text-xs text-gray-400 font-semibold px-3 py-1 bg-darkBg rounded-full border border-borderDark">Alumni</span>
             </div>
 
-            <!-- SD -->
             <div class="bg-cardBg border border-borderDark p-6 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between shadow-xl gap-4">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-2xl bg-amber-600/20 text-amber-400 flex items-center justify-center text-lg font-bold flex-shrink-0">
@@ -580,7 +521,6 @@ $statistik = [
                 <span class="text-xs text-gray-400 font-semibold px-3 py-1 bg-darkBg rounded-full border border-borderDark">Alumni</span>
             </div>
 
-            <!-- TK -->
             <div class="bg-cardBg border border-borderDark p-6 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between shadow-xl gap-4">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-2xl bg-pink-600/20 text-pink-400 flex items-center justify-center text-lg font-bold flex-shrink-0">
@@ -786,7 +726,7 @@ $statistik = [
         </div>
     </section>
 
-    <!-- MODAL POPUP UNTUK MEMPERBESAR GAMBAR SERTIFIKAT -->
+    <!-- MODAL POPUP -->
     <div id="imageModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4" onclick="closeModal()">
         <div class="relative max-w-4xl w-full bg-cardBg border border-borderDark rounded-3xl p-5 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
             <div class="flex justify-between items-center mb-3 pb-2 border-b border-borderDark">
@@ -820,7 +760,7 @@ $statistik = [
         }
     </script>
 
-    <!-- WHAT THEY SAY -->
+    <!-- TESTIMONIALS -->
     <section id="testimonials" class="py-20 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Testimoni</h2>
@@ -874,18 +814,18 @@ $statistik = [
         <h3 class="text-xs uppercase tracking-widest text-gray-400 mb-2">Punya ide proyek?</h3>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-8 tracking-tight">Mari berkarya bersama saya.</h2>
         
-        <a href="https://wa.me/<?php echo $profil['whatsapp']; ?>?text=Halo%2C%20saya%20tertarik%20untuk%20berkolaborasi." target="_blank" class="inline-block px-8 py-4 rounded-2xl bg-white text-gray-900 font-semibold text-xs hover:bg-gray-200 transition shadow-xl mb-10">
+        <a href="https://wa.me/6281285252088?text=Halo%2C%20saya%20tertarik%20untuk%20berkolaborasi." target="_blank" class="inline-block px-8 py-4 rounded-2xl bg-white text-gray-900 font-semibold text-xs hover:bg-gray-200 transition shadow-xl mb-10">
             Hubungi saya
         </a>
 
         <div class="flex items-center justify-center gap-4 text-lg text-gray-400 mb-8">
-            <a href="https://wa.me/<?php echo $profil['whatsapp']; ?>" target="_blank" title="WhatsApp" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-green-400 hover:border-green-500 transition">
+            <a href="https://wa.me/6281285252088" target="_blank" title="WhatsApp" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-green-400 hover:border-green-500 transition">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://www.instagram.com/<?php echo $profil['instagram']; ?>" target="_blank" title="Instagram" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-pink-400 hover:border-pink-500 transition">
+            <a href="https://www.instagram.com/adiyatma.abid" target="_blank" title="Instagram" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-pink-400 hover:border-pink-500 transition">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="mailto:<?php echo $profil['email']; ?>" title="Email" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-purple-400 hover:border-purple-500 transition">
+            <a href="mailto:abidadiyatma53@gmail.com" title="Email" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-purple-400 hover:border-purple-500 transition">
                 <i class="fa-solid fa-envelope"></i>
             </a>
             <a href="https://maps.google.com/?q=Kota+Tangerang" target="_blank" title="Lokasi" class="w-11 h-11 rounded-2xl bg-cardBg border border-borderDark flex items-center justify-center hover:text-blue-400 hover:border-blue-500 transition">
@@ -896,7 +836,7 @@ $statistik = [
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-borderDark text-center text-xs text-gray-500">
-        <p>&copy; <?php echo date('Y'); ?> <?php echo $profil['nama']; ?>. Hak cipta dilindungi.</p>
+        <p>&copy; 2026 Abid Adiyatma. Hak cipta dilindungi.</p>
     </footer>
 
 </body>
